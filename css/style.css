@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: "Ubuntu";
 }
 
 body.overflow-hidden {
@@ -37,6 +38,7 @@ a {
   max-width: 1030px;
   width: 100%;
   margin: 0 auto;
+  position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -52,6 +54,8 @@ p {
 .header {
   background-color: #0E2E5C;
   padding: 15px 0;
+  position: relative;
+  z-index: 100;
 }
 
 .header .nav {
@@ -73,7 +77,6 @@ p {
 .header .nav__item {
   color: #fff;
   position: relative;
-  font-family: "Ubuntu";
   font-size: 18px;
   font-weight: 400;
 }
@@ -101,11 +104,91 @@ p {
 }
 
 .section--intro {
-  background-image: url("../img/intro/intro.jpg");
+  background-image: url("../assets/img/intro/intro.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100%;
   height: 100vh;
   width: 100vw;
   position: relative;
   padding: 0;
+}
+
+.section--intro .photo {
+  overflow: hidden;
+}
+
+.section--intro .photo .man {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 4;
+}
+
+.section--intro .photo .circle {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+}
+
+.section--intro .photo .circle__small {
+  content: '';
+  width: 185px;
+  height: 185px;
+  border-radius: 50%;
+  background-color: #D63C3C;
+  position: absolute;
+  z-index: 3;
+  bottom: 120px;
+  right: 490px;
+}
+
+.section--intro .photo .circle__middle {
+  position: absolute;
+  z-index: 5;
+  bottom: 0px;
+  right: 440px;
+}
+
+.section--intro .container {
+  position: relative;
+  height: 90%;
+}
+
+.section--intro .container .intro__content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 20;
+  -webkit-transform: translateY(-80%);
+          transform: translateY(-80%);
+}
+
+.section--intro .container .intro__content .intro__profession {
+  display: inline-block;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  border: 1px solid #fff;
+  padding: 8px 17px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.section--intro .container .intro__content .intro__title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.section--intro .container .intro__content .intro__title span {
+  color: #fff;
+}
+
+.section--intro .container .intro__content .intro__subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
 }
