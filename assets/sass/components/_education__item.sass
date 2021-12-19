@@ -1,0 +1,68 @@
+.education__item
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    text-align: center
+
+    width: 275px
+    height: 298px
+
+    position: relative
+
+    background-color: #fff
+
+    img
+        margin-bottom: 12px
+
+    .item__title
+        margin-bottom: 20px
+
+        font-size: 18px
+        font-weight: 700
+
+    .item__subtitle
+        margin-bottom: 5px
+        max-width: 150px
+
+    .item__score
+        font-weight: 700
+        font-size: 24px
+
+    .item__button
+        position: absolute
+
+        bottom: -12px
+        left: 50%
+
+        transform: translateX(-50%)
+
+        font-size: 13px
+
+        padding: 3px 20px
+
+        border-radius: 20px
+
+        outline: none
+        border: 0
+
+        cursor: pointer
+
+        background: linear-gradient(90deg, $color--red, $color--yellow)
+        color: #fff
+
+        transition: all .3s
+
+        &:hover
+            transform: scale(1.1)
+
+    &:before
+        content: ""
+        position: absolute
+        top: -3px
+        bottom: -3px
+        left: -3px
+        right: -3px
+        background: linear-gradient(90deg, $color--red, $color--yellow)
+        z-index: -1
