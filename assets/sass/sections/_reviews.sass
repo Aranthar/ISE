@@ -1,0 +1,100 @@
+h1
+    margin-bottom: 35px
+
+.reviews__content
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    .arrows
+        display: flex
+        justify-content: center
+
+    .reviews
+        position: relative 
+
+        &:after
+            content: ''
+
+            width: 167px
+            height: 167px
+
+            border-radius: 50%
+
+            background-color: $color--yellow
+
+            position: absolute
+
+            z-index: -1
+
+            top: -30px
+            right: -70px
+
+        &:before
+            content: ''
+
+            width: 183px
+            height: 183px
+
+            border-radius: 50%
+
+            background-color: $color--red
+
+            position: absolute
+
+            z-index: -1
+
+            left: 130px
+            bottom: -80px
+
+        .circle__small
+            content: ''
+
+            width: 65px
+            height: 65px
+
+            border-radius: 50%
+
+            background-color: $color--orange
+
+            position: absolute
+
+            z-index: -1
+
+            left: 280px
+            bottom: -32px
+
+        .review
+            background-color: $color--light
+
+            padding: 28px 30px
+
+            max-width: 865px
+
+            display: flex
+            flex-direction: row
+
+            img
+
+                margin-right: 20px
+
+            .review__content
+                display: flex
+                flex-direction: column
+                justify-content: center
+                
+                .review__author
+                    font-size: 30px
+                    font-weight: 700
+
+                    margin-bottom: 10px
+
+                .review__text
+                    font-size: 18px
+                    font-weight: 300
+
+            i
+                font-size: 50px
+
+                opacity: 0.65
