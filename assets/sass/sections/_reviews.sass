@@ -7,11 +7,54 @@ h1
     justify-content: center
     align-items: center
 
+    .inner
+        max-width: 865px
+
+        .circle__small
+            content: ''
+
+            width: 65px
+            height: 65px
+
+            border-radius: 50%
+
+            background-color: $color--orange
+
+            position: absolute
+
+            z-index: -1
+
+            left: 365px
+            bottom: 30px
+
     .arrows
         display: flex
-        justify-content: center
+        justify-content: flex-end
+
+        margin-left: auto
+
+        margin-top: 20px
+
+        .slider__arrow
+            font-size: 40px
+            font-weight: 700
+
+            cursor: pointer
+
+            color: $color--orange
+
+            transition: all .3s
+
+            &:hover
+                color: $color--red
+
+            &--prev
+                margin-right: 10px
 
     .reviews
+        display: flex
+        flex-direction: row
+
         position: relative 
 
         &:after
@@ -43,40 +86,20 @@ h1
 
             position: absolute
 
-            z-index: -1
+            z-index: -3
 
             left: 130px
             bottom: -80px
-
-        .circle__small
-            content: ''
-
-            width: 65px
-            height: 65px
-
-            border-radius: 50%
-
-            background-color: $color--orange
-
-            position: absolute
-
-            z-index: -1
-
-            left: 280px
-            bottom: -32px
 
         .review
             background-color: $color--light
 
             padding: 28px 30px
 
-            max-width: 865px
-
             display: flex
             flex-direction: row
 
             img
-
                 margin-right: 20px
 
             .review__content

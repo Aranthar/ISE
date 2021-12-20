@@ -6,8 +6,10 @@
         display: flex
         flex-direction: column
         justify-content: center
-        flex: 30%
-        margin-right: 100px
+
+        max-width: 360px
+
+        margin-right: 100px 
 
         h1
             margin-bottom: 15px
@@ -16,18 +18,18 @@
             font-size: 18px
 
     .about__aside
+        flex: 0 100%
         display: flex
-        flex: 50%
         
         .aside__items
-            display: flex
-            flex-direction: row
-            flex-wrap: wrap
+            width: 100%
+
+            display: grid
+            grid-gap: 60px 70px
+            grid-template-rows: 1fr 1fr
+            grid-template-columns: 1fr 1fr
 
             .aside__item
-                padding-right: 30px
-                padding-bottom: 50px
-                
                 span
                     i
                         color: $color--red

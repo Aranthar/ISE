@@ -28,9 +28,9 @@
         </div>
       </header>
       <div class="photo">
-        <img class="circle" src="./assets/img/intro/Circle_middle.png" alt="">
-        <img class="man" src="./assets/img/intro/Man_top.png" alt="">
-        <img class="circle__middle" src="./assets/img/intro/Ellipse_big.png" alt="">
+        <div class="circle"></div>
+        <img class="man" src="./assets/img/intro/Man_top.png">
+        <div class="circle__middle"></div>
         <div class="circle__small"></div>
       </div>
       <div class="container">
@@ -172,39 +172,41 @@
       <div class="container">
         <h1>Отзывы</h1>
         <div class="reviews__content">
-          <div class="reviews">
+          <div class="inner">
             <div class="circle__small"></div>
-            <div class="review">
-              <img src="./assets/img/reviews/Anna.png" alt="">
-              <div class="review__content">
-                <span class="review__author">Анна Толмачева</span>
-                <p class="review__text">Уровень преподавания на уровне, но СГМ или же математический анализ, довольно таки сложно воспринимать. Выбрала, потому что смотрела описание, посчитала, что мне это подходит. Поговорила со старшекурсниками, со специалистами, которые объяснили, что и как. Буду ли я работать по специальности? Да, по крайней мере, я очень этого хочу.</p>
+            <div class="reviews">
+              <div class="review">
+                <img src="./assets/img/reviews/Anna.png" alt="">
+                <div class="review__content">
+                  <span class="review__author">Анна Толмачева</span>
+                  <p class="review__text">Уровень преподавания на уровне, но СГМ или же математический анализ, довольно таки сложно воспринимать. Выбрала, потому что смотрела описание, посчитала, что мне это подходит. Поговорила со старшекурсниками, со специалистами, которые объяснили, что и как. Буду ли я работать по специальности? Да, по крайней мере, я очень этого хочу.</p>
+                </div>
+                <i class="fas fa-quote-right"></i>
               </div>
-              <i class="fas fa-quote-right"></i>
-            </div>
-            <div class="review">
-              <img src="./assets/img/reviews/Daniil.png" alt="">
-              <div class="review__content">
-                <span class="review__author">Даниил Назипов</span>
-                <p class="review__text">Уровень работы высок, но хотелось бы интегрировать в обучение более практические вещи. Мне показалось это направление достаточно перспективным и интересным. Точно не знаю, буду ли я работать по специальности после выпуска, ведь за 2,5 года все может измениться, тем более сфера it большая.</p>
+              <div class="review">
+                <img src="./assets/img/reviews/Daniil.png" alt="">
+                <div class="review__content">
+                  <span class="review__author">Даниил Назипов</span>
+                  <p class="review__text">Уровень работы высок, но хотелось бы интегрировать в обучение более практические вещи. Мне показалось это направление достаточно перспективным и интересным. Точно не знаю, буду ли я работать по специальности после выпуска, ведь за 2,5 года все может измениться, тем более сфера it большая.</p>
+                </div>
+                <i class="fas fa-quote-right"></i>
               </div>
-              <i class="fas fa-quote-right"></i>
-            </div>
-            <div class="review">
-              <img src="./assets/img/reviews/Kristina.png" alt="">
-              <div class="review__content">
-                <span class="review__author">Кристина Логвиненко</span>
-                <p class="review__text">Уровень преподавания математических дисциплин особенно удивил и порадовал. Я поступила на такое направление, потому что мне оно показалось довольно узким, в отличие от обычных направлений, связанных с программированием. А чем уже направление, тем легче сделать карьеру, при условии, что ты хороший специалист. Пока что я получаю образование исключительно для себя, но совсем не исключаю, что все-таки начну работать в области ИБ.</p>
+              <div class="review">
+                <img src="./assets/img/reviews/Kristina.png" alt="">
+                <div class="review__content">
+                  <span class="review__author">Кристина Логвиненко</span>
+                  <p class="review__text">Уровень преподавания математических дисциплин особенно удивил и порадовал. Я поступила на такое направление, потому что мне оно показалось довольно узким, в отличие от обычных направлений, связанных с программированием. А чем уже направление, тем легче сделать карьеру, при условии, что ты хороший специалист. Пока что я получаю образование исключительно для себя, но совсем не исключаю, что все-таки начну работать в области ИБ.</p>
+                </div>
+                <i class="fas fa-quote-right"></i>
               </div>
-              <i class="fas fa-quote-right"></i>
             </div>
-          </div>
-          <div class="arrows">
-            <div class="slider__arrow slider__arrow--prev">
-              <i class="fas fa-chevron-left"></i>
-            </div>
-            <div class="slider__arrow slider__arrow--next">
-              <i class="fas fa-chevron-right"></i>
+            <div class="arrows">
+              <div class="slider__arrow slider__arrow--prev">
+                <i class="fas fa-chevron-left"></i>
+              </div>
+              <div class="slider__arrow slider__arrow--next">
+                <i class="fas fa-chevron-right"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -248,8 +250,6 @@
         <span class="allright">All rights reserved © Danila Kolomiets</span>
       </div>
     </footer>
-
-
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

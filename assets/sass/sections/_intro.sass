@@ -1,8 +1,8 @@
 .section--intro
-    background-image: url('../assets/img/intro/intro.jpg')
-    background-repeat: no-repeat
+    background-size: cover
     background-position: center
-    background-size: 100%
+    background-repeat: no-repeat
+    background-image: url('../assets/img/intro/intro.jpg')
 
     height: 100vh
     width:  100vw
@@ -11,9 +11,9 @@
 
     padding: 0
 
-    .photo
-        overflow: hidden
+    overflow: hidden
 
+    .photo
         .man
             position: absolute
 
@@ -23,11 +23,22 @@
             z-index: 4
 
         .circle
+            content: ''
+
+            width: 290px
+            height: 290px
+
+            border-radius: 50%
+
+            background-color: $color--orange
+
             position: absolute
-            z-index: 1
+            z-index: 5
             
-            bottom: 0
-            left: 0
+            bottom: -70px
+            right: 450px
+
+            overflow: hidden
         
         .circle__small
             content: ''
@@ -40,19 +51,27 @@
             background-color: $color--red
 
             position: absolute
-
             z-index: 3
 
             bottom: 120px
             right: 490px
 
         .circle__middle
+            content: ''
+
+            width: 950px
+            height: 950px
+
+            border-radius: 50%
+
+            background-color: $color--yellow
+
             position: absolute
 
-            z-index: 5
+            z-index: 1
 
-            bottom: 0px
-            right: 440px
+            bottom: -100px
+            left: -20px
 
     .container
         position: relative
