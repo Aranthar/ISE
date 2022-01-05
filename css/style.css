@@ -1004,25 +1004,25 @@ h1 {
   }
 }
 
-.section--faq .faq:not(:last-child) .question {
+.section--faq .question {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 5px;
 }
 
 @media screen and (max-width: 768px) {
-  .section--faq .faq:not(:last-child) .question {
+  .section--faq .question {
     font-size: 18px;
   }
 }
 
-.section--faq .faq:not(:last-child) .answer {
+.section--faq .answer {
   font-size: 18px;
   font-weight: 400;
 }
 
 @media screen and (max-width: 768px) {
-  .section--faq .faq:not(:last-child) .answer {
+  .section--faq .answer {
     font-size: 14px;
   }
 }
