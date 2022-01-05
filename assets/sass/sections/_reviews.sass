@@ -1,6 +1,11 @@
 h1
     margin-bottom: 35px
 
+    @media screen and (max-width: $breakpoint--md)
+        margin-bottom: 10px
+
+        font-size: 22px
+
 .reviews__content
     display: flex
     flex-direction: column
@@ -9,6 +14,12 @@ h1
 
     .inner
         max-width: 865px
+
+        @media screen and (max-width: $breakpoint--lg)
+            max-width: 700px
+
+        @media screen and (max-width: $breakpoint--md)
+            max-width: 570px
 
         .circle__small
             content: ''
@@ -26,6 +37,16 @@ h1
 
             left: 365px
             bottom: 30px
+
+            @media screen and (max-width: $breakpoint--xl)
+                left: 300px
+
+            @media screen and (max-width: $breakpoint--lg)
+                left: 270px
+
+            @media screen and (max-width: $breakpoint--md)
+                left: 330px
+                bottom: 40px
 
     .arrows
         display: flex
@@ -99,8 +120,21 @@ h1
             display: flex
             flex-direction: row
 
+            @media screen and (max-width: $breakpoint--md)
+                flex-direction: column
+
+            @media screen and (max-width: $breakpoint--md)
+                position: relative
+
             img
                 margin-right: 20px
+
+                @media screen and (max-width: $breakpoint--lg)
+                    width: 160px
+                    height: 160px
+
+                @media screen and (max-width: $breakpoint--md)
+                    margin: 0 auto 20px auto
 
             .review__content
                 display: flex
@@ -113,11 +147,31 @@ h1
 
                     margin-bottom: 10px
 
+                    @media screen and (max-width: $breakpoint--lg)
+                        font-size: 25px
+
+                    @media screen and (max-width: $breakpoint--md)
+                        font-size: 18px
+
                 .review__text
                     font-size: 18px
                     font-weight: 300
+
+                    @media screen and (max-width: $breakpoint--lg)
+                        font-size: 18px
+
+                    @media screen and (max-width: $breakpoint--md)
+                        font-size: 14px
 
             i
                 font-size: 50px
 
                 opacity: 0.65
+
+                @media screen and (max-width: $breakpoint--md)
+                    position: absolute
+
+                    top: 30px
+                    right: 30px
+
+                    font-size: 40px

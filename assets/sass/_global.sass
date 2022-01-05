@@ -30,6 +30,9 @@ a
 .section
   padding-top: 60px
 
+  @media screen and (max-width: $breakpoint--md)
+    padding-top: 30px
+
 .container
   max-width: 1030px
   width: 100%
@@ -37,6 +40,12 @@ a
   margin: 0 auto
 
   position: relative
+
+  @media screen and (max-width: $breakpoint--xl)
+    max-width: 922px
+
+  @media screen and (max-width: $breakpoint--lg)
+    max-width: 666px
 
 h1, h2, h3, h4, h5, h6
   font-size: 30px

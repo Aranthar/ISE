@@ -22,6 +22,12 @@
 
             z-index: 4
 
+            @media screen and (max-width: $breakpoint--xl)
+                right: -100px
+
+            @media screen and (max-width: $breakpoint--lg)
+                display: none
+
         .circle
             content: ''
 
@@ -39,6 +45,13 @@
             right: 450px
 
             overflow: hidden
+
+            @media screen and (max-width: $breakpoint--xl)
+                right: 350px
+
+            @media screen and (max-width: $breakpoint--lg)
+                right: -20px
+                bottom: -80px
         
         .circle__small
             content: ''
@@ -55,6 +68,13 @@
 
             bottom: 120px
             right: 490px
+
+            @media screen and (max-width: $breakpoint--xl)
+                right: 390px
+
+            @media screen and (max-width: $breakpoint--lg)
+                right: -40px
+                bottom: 100px
 
         .circle__middle
             content: ''
@@ -73,6 +93,13 @@
             bottom: -100px
             left: -20px
 
+            @media screen and (max-width: $breakpoint--lg)
+                top: -100px
+                left: -50px
+
+                width: 798px
+                height: 798px
+
     .container
         position: relative
 
@@ -87,6 +114,12 @@
             z-index: 20
 
             transform: translateY(-80%)
+
+            @media screen and (max-width: 1100px) 
+                padding-left: 40px
+
+            @media screen and (max-width: $breakpoint--lg)
+                padding-left: 0px
 
             .intro__profession
                 display: inline-block
