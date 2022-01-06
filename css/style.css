@@ -73,6 +73,12 @@ a {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .container {
+    max-width: 400px;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-size: 30px;
   margin: 0;
@@ -385,7 +391,13 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 415px;
+  max-width: 415px;
+}
+
+@media screen and (max-width: 500px) {
+  .info__content {
+    max-width: 350px;
+  }
 }
 
 .info__content h1 {
@@ -831,6 +843,14 @@ p {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .about__content .about__aside .aside__items {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .about__content .about__aside .aside__items .aside__item {
     max-width: 200px;
@@ -1060,6 +1080,12 @@ p {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .section--reviews .reviews__content .inner {
+    max-width: 234px;
+  }
+}
+
 .section--reviews .reviews__content .inner .circle__small {
   content: '';
   width: 65px;
@@ -1094,6 +1120,13 @@ p {
 @media screen and (max-width: 600px) {
   .section--reviews .reviews__content .inner .circle__small {
     left: 240px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section--reviews .reviews__content .inner .circle__small {
+    width: 0;
+    height: 0;
   }
 }
 
@@ -1170,6 +1203,13 @@ p {
 @media screen and (max-width: 600px) {
   .section--reviews .reviews__content .reviews:before {
     left: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section--reviews .reviews__content .reviews:before {
+    bottom: 150px;
+    left: -60px;
   }
 }
 
@@ -1279,6 +1319,14 @@ p {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .section--reviews .reviews__content .reviews .review i {
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+  }
+}
+
 .section--faq {
   padding: 70px 0 30px 0;
 }
@@ -1355,5 +1403,11 @@ p {
 @media screen and (max-width: 768px) {
   .footer .allright {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer .allright {
+    font-size: 10px;
   }
 }

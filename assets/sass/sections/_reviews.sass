@@ -28,6 +28,9 @@
             @media screen and (max-width: $breakpoint--sm)
                 max-width: 400px
 
+            @media screen and (max-width: $breakpoint--in)
+                max-width: 234px
+
             .circle__small
                 content: ''
 
@@ -57,6 +60,10 @@
 
                 @media screen and (max-width: $breakpoint--sm)
                     left: 240px
+
+                @media screen and (max-width: $breakpoint--in)
+                    width: 0
+                    height: 0
 
         .arrows
             display: flex
@@ -129,6 +136,10 @@
                 @media screen and (max-width: $breakpoint--sm)
                     left: 50px
 
+                @media screen and (max-width: $breakpoint--in)
+                    bottom: 150px
+                    left: -60px
+
             .review
                 background-color: $color--light
 
@@ -192,3 +203,9 @@
                         right: 30px
 
                         font-size: 40px
+
+                    @media screen and (max-width: $breakpoint--in)
+                        top: 20px
+                        right: 20px
+
+                        font-size: 30px
