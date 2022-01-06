@@ -1,14 +1,19 @@
-h1
+.salary__title
     @media screen and (max-width: $breakpoint--md)
         font-size: 22px
 
         margin-bottom: 0px
+
+    @media screen and (max-width: $breakpoint--sm)
+        padding: 0 30px
 
 .salary
     display: flex
     justify-content: center
     align-items: center
 
+    @media screen and (max-width: $breakpoint--sm)
+        padding: 0 20px
 
     img
         @media screen and (max-width: $breakpoint--lg)
@@ -24,3 +29,6 @@ h1
             object-fit: contain
 
             margin: 0 auto
+
+        @media screen and (max-width: $breakpoint--sm)
+            overflow: auto

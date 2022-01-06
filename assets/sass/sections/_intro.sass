@@ -52,6 +52,12 @@
             @media screen and (max-width: $breakpoint--lg)
                 right: -20px
                 bottom: -80px
+
+            @media screen and (max-width: $breakpoint--sm)
+                left: -80px
+                bottom: 100px
+
+                z-index: 0
         
         .circle__small
             content: ''
@@ -75,6 +81,12 @@
             @media screen and (max-width: $breakpoint--lg)
                 right: -40px
                 bottom: 100px
+
+            @media screen and (max-width: $breakpoint--sm)
+                right: -20px
+                top: 100px
+
+                z-index: 0
 
         .circle__middle
             content: ''
@@ -100,6 +112,15 @@
                 width: 798px
                 height: 798px
 
+            @media screen and (max-width: $breakpoint--sm)
+                width: 580px
+                height: 580px
+
+                top: 50%
+                left: 50%
+
+                transform: translate(-50%, -50%)
+
     .container
         position: relative
 
@@ -120,6 +141,10 @@
 
             @media screen and (max-width: $breakpoint--lg)
                 padding-left: 0px
+
+            @media screen and (max-width: $breakpoint--sm)
+                top: 60%
+                left: 10%
 
             .intro__profession
                 display: inline-block
@@ -143,6 +168,11 @@
                 line-height: 1.1
 
                 margin-bottom: 24px
+
+                @media screen and (max-width: $breakpoint--sm)
+                    font-size: 34px
+
+                    margin-bottom: 12px
 
                 span
                     color: #fff

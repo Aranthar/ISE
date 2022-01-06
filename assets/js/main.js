@@ -23,6 +23,11 @@ $(document).ready(function(){
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 700);
     });
+
+    $('.header__burger').click(function(event) {
+        $('.header__burger, .nav').toggleClass('active');
+        $('body').toggleClass('lock');
+    });
 });
 
 AOS.init();

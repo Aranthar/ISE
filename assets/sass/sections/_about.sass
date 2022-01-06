@@ -5,6 +5,9 @@
     @media screen and (max-width: $breakpoint--md)
         flex-direction: column
 
+    @media screen and (max-width: $breakpoint--sm)
+        padding: 0 30px
+
     .about__info
         display: flex
         flex-direction: column
@@ -66,6 +69,9 @@
                 grid-gap: 10px 10px
 
             .aside__item
+                @media screen and (max-width: $breakpoint--sm)
+                    max-width: 200px
+
                 span
                     i
                         color: $color--red
@@ -84,3 +90,6 @@
                         width: 250px
 
                         font-size: 14px
+
+                    @media screen and (max-width: $breakpoint--sm)
+                        max-width: 200px

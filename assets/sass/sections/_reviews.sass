@@ -1,177 +1,194 @@
-h1
-    margin-bottom: 35px
-
-    @media screen and (max-width: $breakpoint--md)
-        margin-bottom: 10px
-
-        font-size: 22px
-
-.reviews__content
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-
-    .inner
-        max-width: 865px
-
-        @media screen and (max-width: $breakpoint--lg)
-            max-width: 700px
+.section--reviews
+    h1
+        margin-bottom: 35px
 
         @media screen and (max-width: $breakpoint--md)
-            max-width: 570px
+            margin-bottom: 10px
 
-        .circle__small
-            content: ''
+            font-size: 22px
 
-            width: 65px
-            height: 65px
+        @media screen and (max-width: $breakpoint--sm)
+            padding: 0 30px
 
-            border-radius: 50%
+    .reviews__content
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
 
-            background-color: $color--orange
-
-            position: absolute
-
-            z-index: -1
-
-            left: 365px
-            bottom: 30px
-
-            @media screen and (max-width: $breakpoint--xl)
-                left: 300px
+        .inner
+            max-width: 865px
 
             @media screen and (max-width: $breakpoint--lg)
-                left: 270px
+                max-width: 700px
 
             @media screen and (max-width: $breakpoint--md)
-                left: 330px
-                bottom: 40px
+                max-width: 570px
 
-    .arrows
-        display: flex
-        justify-content: flex-end
+            @media screen and (max-width: $breakpoint--sm)
+                max-width: 400px
 
-        margin-left: auto
+            .circle__small
+                content: ''
 
-        margin-top: 20px
+                width: 65px
+                height: 65px
 
-        .slider__arrow
-            font-size: 40px
-            font-weight: 700
+                border-radius: 50%
 
-            cursor: pointer
+                background-color: $color--orange
 
-            color: $color--orange
+                position: absolute
 
-            transition: all .3s
+                z-index: -1
 
-            &:hover
-                color: $color--red
+                left: 365px
+                bottom: 30px
 
-            &--prev
-                margin-right: 10px
+                @media screen and (max-width: $breakpoint--xl)
+                    left: 300px
 
-    .reviews
-        display: flex
-        flex-direction: row
+                @media screen and (max-width: $breakpoint--lg)
+                    left: 270px
 
-        position: relative 
+                @media screen and (max-width: $breakpoint--md)
+                    left: 330px
+                    bottom: 40px
 
-        &:after
-            content: ''
+                @media screen and (max-width: $breakpoint--sm)
+                    left: 240px
 
-            width: 167px
-            height: 167px
+        .arrows
+            display: flex
+            justify-content: flex-end
 
-            border-radius: 50%
+            margin-left: auto
 
-            background-color: $color--yellow
+            margin-top: 20px
 
-            position: absolute
+            .slider__arrow
+                font-size: 40px
+                font-weight: 700
 
-            z-index: -1
+                cursor: pointer
 
-            top: -30px
-            right: -70px
+                color: $color--orange
 
-        &:before
-            content: ''
+                transition: all .3s
 
-            width: 183px
-            height: 183px
+                &:hover
+                    color: $color--red
 
-            border-radius: 50%
+                &--prev
+                    margin-right: 10px
 
-            background-color: $color--red
-
-            position: absolute
-
-            z-index: -3
-
-            left: 130px
-            bottom: -80px
-
-        .review
-            background-color: $color--light
-
-            padding: 28px 30px
-
+        .reviews
             display: flex
             flex-direction: row
 
-            @media screen and (max-width: $breakpoint--md)
-                flex-direction: column
+            position: relative 
 
-            @media screen and (max-width: $breakpoint--md)
-                position: relative
+            &:after
+                content: ''
 
-            img
-                margin-right: 20px
+                width: 167px
+                height: 167px
 
-                @media screen and (max-width: $breakpoint--lg)
-                    width: 160px
-                    height: 160px
+                border-radius: 50%
 
-                @media screen and (max-width: $breakpoint--md)
-                    margin: 0 auto 20px auto
+                background-color: $color--yellow
 
-            .review__content
+                position: absolute
+
+                z-index: -1
+
+                top: -30px
+                right: -70px
+
+                @media screen and (max-width: $breakpoint--sm)
+                    right: -50px
+                    top: -40px
+
+            &:before
+                content: ''
+
+                width: 183px
+                height: 183px
+
+                border-radius: 50%
+
+                background-color: $color--red
+
+                position: absolute
+
+                z-index: -3
+
+                left: 130px
+                bottom: -80px
+
+                @media screen and (max-width: $breakpoint--sm)
+                    left: 50px
+
+            .review
+                background-color: $color--light
+
+                padding: 28px 30px
+
                 display: flex
-                flex-direction: column
-                justify-content: center
-                
-                .review__author
-                    font-size: 30px
-                    font-weight: 700
-
-                    margin-bottom: 10px
-
-                    @media screen and (max-width: $breakpoint--lg)
-                        font-size: 25px
-
-                    @media screen and (max-width: $breakpoint--md)
-                        font-size: 18px
-
-                .review__text
-                    font-size: 18px
-                    font-weight: 300
-
-                    @media screen and (max-width: $breakpoint--lg)
-                        font-size: 18px
-
-                    @media screen and (max-width: $breakpoint--md)
-                        font-size: 14px
-
-            i
-                font-size: 50px
-
-                opacity: 0.65
+                flex-direction: row
 
                 @media screen and (max-width: $breakpoint--md)
-                    position: absolute
+                    flex-direction: column
 
-                    top: 30px
-                    right: 30px
+                @media screen and (max-width: $breakpoint--md)
+                    position: relative
 
-                    font-size: 40px
+                img
+                    margin-right: 20px
+
+                    @media screen and (max-width: $breakpoint--lg)
+                        width: 160px
+                        height: 160px
+
+                    @media screen and (max-width: $breakpoint--md)
+                        margin: 0 auto 20px auto
+
+                .review__content
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    
+                    .review__author
+                        font-size: 30px
+                        font-weight: 700
+
+                        margin-bottom: 10px
+
+                        @media screen and (max-width: $breakpoint--lg)
+                            font-size: 25px
+
+                        @media screen and (max-width: $breakpoint--md)
+                            font-size: 18px
+
+                    .review__text
+                        font-size: 18px
+                        font-weight: 300
+
+                        @media screen and (max-width: $breakpoint--lg)
+                            font-size: 18px
+
+                        @media screen and (max-width: $breakpoint--md)
+                            font-size: 14px
+
+                i
+                    font-size: 50px
+
+                    opacity: 0.65
+
+                    @media screen and (max-width: $breakpoint--md)
+                        position: absolute
+
+                        top: 30px
+                        right: 30px
+
+                        font-size: 40px

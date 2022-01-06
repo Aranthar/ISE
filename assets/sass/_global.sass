@@ -13,6 +13,9 @@ body
   &.overflow-hidden
     overflow: hidden
 
+body.lock
+  overflow: hidden
+
 button
   font-family: $font--ubuntu
 
@@ -46,6 +49,9 @@ a
 
   @media screen and (max-width: $breakpoint--lg)
     max-width: 666px
+
+  @media screen and (max-width: $breakpoint--sm)
+    max-width: 500px
 
 h1, h2, h3, h4, h5, h6
   font-size: 30px
