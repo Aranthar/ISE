@@ -5,7 +5,7 @@
         margin-bottom: 0px
 
     @media screen and (max-width: $breakpoint--sm)
-        padding: 0 30px
+        padding: 0 30px 10px
 
 .salary
     display: flex
@@ -31,4 +31,29 @@
             margin: 0 auto
 
         @media screen and (max-width: $breakpoint--sm)
-            overflow: auto
+            display: none
+
+.salary__mobile
+    display: flex
+    flex-direction: column
+
+    @media screen and (min-width: $breakpoint--sm)
+        display: none
+
+    .salary__mobile-content
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+
+        margin-bottom: 10px
+
+        .salary__regions
+            li
+                font-size: 18px
+                font-weight: 400
+
+        .salary__money
+            li
+                font-size: 18px
+                font-weight: 400
